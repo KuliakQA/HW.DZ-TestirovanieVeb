@@ -15,12 +15,11 @@ repositories {
 }
 
 dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter:5.8.2'
-    testImplementation 'com.codeborne:selenide:6.1.2'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.7.0'
+    implementation 'org.seleniumhq.selenium:selenium-java:3.141.59'
 
 }
 
 test {
     useJUnitPlatform()
-    systemProperty 'selenide.headless', System.getProperty('selenide.headless')
 }
